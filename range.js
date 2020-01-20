@@ -156,7 +156,7 @@ var setSlider = function (id, max, min, step, duration) {
 
         timer = setInterval(function () {
 
-            if (t == max) {
+            if (t + step >= max) {
                 clearInterval(timer);
                 t = min;
                 slider.value = t;
@@ -174,17 +174,19 @@ var setSlider = function (id, max, min, step, duration) {
         startButton.onclick = start;
     }
     function before() {
-        if (t <= max & t >= min) {
+        if (t - step <= max & t - step >= min) {
 
             t = t - step;
         }
+        console.log(t);
         slider.value = t;
     }
     function after() {
-        if (t < max) {
+        if (t + step <= max) {
 
             t = t + step;
         }
+        console.log(t);
         slider.value = t;
 
     }
