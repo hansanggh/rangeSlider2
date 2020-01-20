@@ -1,6 +1,6 @@
-# GimhsSlider
+# Gaia3dSlider
 
-Input Range Slider module 커스텀하여 사용하기.
+Input Range Slider module 커스텀 사용하기.
 
 ![screenshot](./images/img.png)
 
