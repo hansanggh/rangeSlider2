@@ -1,4 +1,4 @@
-var Gaia3dSlider = function (id) {
+var KotSlider = function (id) {
 
     var defaultOptions = {
         max: 5,
@@ -18,7 +18,7 @@ var Gaia3dSlider = function (id) {
 }
 
 
-Gaia3dSlider.prototype.init = function (id) {
+KotSlider.prototype.init = function (id) {
 
     if (document.getElementById(id) != null) {
 
@@ -75,7 +75,7 @@ Gaia3dSlider.prototype.init = function (id) {
     }
 }
 
-Gaia3dSlider.prototype.setMax = function (max) {
+KotSlider.prototype.setMax = function (max) {
     this.max = max;
 
     var max = max;
@@ -87,7 +87,7 @@ Gaia3dSlider.prototype.setMax = function (max) {
 
 }
 
-Gaia3dSlider.prototype.setMin = function (min) {
+KotSlider.prototype.setMin = function (min) {
     this.min = min;
 
     var max = this.max;
@@ -99,7 +99,7 @@ Gaia3dSlider.prototype.setMin = function (min) {
 
 }
 
-Gaia3dSlider.prototype.setStep = function (step) {
+KotSlider.prototype.setStep = function (step) {
     this.step = step;
 
     var max = this.max;
@@ -111,7 +111,7 @@ Gaia3dSlider.prototype.setStep = function (step) {
 
 }
 
-Gaia3dSlider.prototype.setDuration = function (duration) {
+KotSlider.prototype.setDuration = function (duration) {
     this.duration = duration;
 
     var max = this.max;
