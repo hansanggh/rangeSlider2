@@ -1,6 +1,6 @@
-# Gaia3dSlider
+# KotSlider
 
-Gaia3dSlider 모듈 사용하기.
+KotSlider 모듈 사용하기.
 
 ![screenshot](./images/img.png)
 
@@ -20,7 +20,7 @@ input 태그에 id를 넣어 생성한다.
 
 ### 객체 생성
 
-Gaia3dSlider 객체 생성시 매개변수로 input태그의 id를 넣는다.
+KotSlider 객체 생성시 매개변수로 input태그의 id를 넣는다.
 
 ```
 var gs = new Gaia3dSlider('myRange');
