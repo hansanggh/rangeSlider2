@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Range Slider</title>
+    <script src="./range.js"></script>
+    <link rel="stylesheet" type="text/css" href="./range.css">
+    
+</head>
+
+<body>
+    <h1>Range Slider</h1>
+
+    <input id="myRange" />
+    <input id="myRange2" />
+    <input id="myRange3" />
+
+    <script>
+
+        var gs = new Gaia3dSlider('myRange');
+        var gs2 = new Gaia3dSlider('myRange2');
+        var gs3 = new Gaia3dSlider('myRange3');
+
+        gs.setMax(20);
+        gs.setStep(2);
+        gs2.setMax(10);
+        gs2.setStep(1);
+        gs2.setDuration(100);
+
+    </script>
+
+</body>
+
+</html>
