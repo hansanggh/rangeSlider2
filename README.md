@@ -1,6 +1,6 @@
 # Gaia3dSlider
 
-Input Range Slider module 커스텀 사용하기.
+Gaia3dSlider 모듈 사용하기.
 
 ![screenshot](./images/img.png)
 
