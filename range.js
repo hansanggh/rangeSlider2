@@ -46,13 +46,9 @@ KotSlider.prototype.init = function () {
             this.setSlider(this.sliderObject);
 
             function makeSliderBtn(name, action, id) {
-                var name = document.createElement('input');
-                // var div = document.createElement('div');
-                console.log(id);
-                // div.setAttribute('class', 'gaiaBtn');
+                var name = document.createElement('button');
 
                 name.id = action + id;
-                name.type = "button";
                 name.setAttribute('class', action);
                 name.value = action;
                 divChild1.append(name);
