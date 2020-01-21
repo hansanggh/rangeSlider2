@@ -6,8 +6,6 @@ var KotSlider = function (inputId) {
         step: 1,
         duration: 1000
     };
-    
-    this.id = inputId;
     this.t = defaultOptions.min;
 
     this.sliderObject = {
@@ -24,8 +22,8 @@ var KotSlider = function (inputId) {
 KotSlider.prototype.init = function () {
 
 
-        if (document.getElementById(this.id) && document.getElementById(this.id).tagName == 'INPUT') {
-            var slider = document.getElementById(this.id);
+        if (document.getElementById(this.sliderObject.id) && document.getElementById(this.sliderObject.id).tagName == 'INPUT') {
+            var slider = document.getElementById(this.sliderObject.id);
 
             var div = document.createElement('div');
             var divChild1 = document.createElement('div');
@@ -54,7 +52,7 @@ KotSlider.prototype.init = function () {
                 divChild1.append(name);
             }
         } else {
-            throw '"' + this.id + '" 라는 id의 input이 없습니다.';
+            throw '"' + this.sliderObject.id + '" 라는 id의 input이 없습니다.';
         }
 }
 
