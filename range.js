@@ -27,13 +27,14 @@ KotSlider.prototype.init = function () {
     var div = document.createElement('div');
     var divChild1 = document.createElement('div');
     var divChild2 = document.createElement('div');
+    var mother = slider.parentNode;
     div.setAttribute('class', 'rangeWrap');
     divChild1.setAttribute('class', 'rangeWrapChild button');
     divChild2.setAttribute('class', 'rangeWrapChild slide');
     divChild2.append(slider);
     div.append(divChild1);
     div.append(divChild2);
-    document.body.appendChild(div);
+    mother.appendChild(div);
 
     makeSliderBtn("startBtn", "start", this.id);
     makeSliderBtn("stopBtn", "stop", this.id);
@@ -79,6 +80,36 @@ KotSlider.prototype.setDuration = function (duration) {
 
     this.duration = duration;
     this.setSlider(this.id);
+
+}
+
+KotSlider.prototype.getMax = function () {
+
+    return this.max;
+
+}
+
+KotSlider.prototype.getMin = function () {
+
+    return this.min;
+
+}
+
+KotSlider.prototype.getStep = function () {
+
+    return this.step;
+
+}
+
+KotSlider.prototype.getDuration = function () {
+
+    return this.duration
+
+}
+
+KotSlider.prototype.getValue = function () {
+
+    return this.t
 
 }
 
