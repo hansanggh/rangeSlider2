@@ -28,12 +28,13 @@ KotSlider.prototype.init = function () {
     var divChild1 = document.createElement('div');
     var divChild2 = document.createElement('div');
     var mother = slider.parentNode;
+
     div.setAttribute('class', 'rangeWrap');
     divChild1.setAttribute('class', 'rangeWrapChild button');
     divChild2.setAttribute('class', 'rangeWrapChild slide');
-    divChild2.append(slider);
-    div.append(divChild1);
-    div.append(divChild2);
+    divChild2.appendChild(slider);
+    div.appendChild(divChild1);
+    div.appendChild(divChild2);
     mother.appendChild(div);
 
     makeSliderBtn("startBtn", "start", this.id);
@@ -49,7 +50,7 @@ KotSlider.prototype.init = function () {
         name.id = action + id;
         name.setAttribute('class', action);
         name.value = action;
-        divChild1.append(name);
+        divChild1.appendChild(name);
     }
 
 
