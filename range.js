@@ -130,8 +130,8 @@ KotSlider.prototype.setSlider = function (id) {
     var step = this.step;
     var duration = this.duration;
 
-    sliderObject.value = t;
     sliderObject.type = 'range';
+    sliderObject.value = t;
     sliderObject.max = max;
     sliderObject.min = min;
     sliderObject.step = step;
